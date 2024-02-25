@@ -10,20 +10,43 @@ body {
     bottom: 0;
     width: 100%;
   }
-  
-  #info {
-    z-index: 1000;
+
+  #mainTitle {
+    left: 20px;
+    top: 20px;
+    width: 300px;
+    height: 50px;
+    background: #201d1d;
     position: absolute;
-    width: 500px;
-    top: 1%;
-    bottom: 1%;
-    left: .5%;
-    padding: 40px 15px 900px 15px;
-    background: #343a40;
+    padding: 20px;
+    z-index: 2;
+    border-radius: 10px;
+    font-size: 40px;
     color: white;
-  
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
   }
   
+  .toggle-container {
+    position: absolute;
+    top: 500px;
+    left: 10px;
+    z-index: 3;
+}
+
+  #info {
+    z-index: 1;
+    position: absolute;
+    width: 20%;
+    top: 0;
+    bottom: 50%;
+    right: 0%;
+    height: 100%;
+    background: #201d1d;
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+  }
   
   /* social media icons */
   #info a {
@@ -49,7 +72,7 @@ body {
   
   /* card decks */
   #desc {
-    text-align: center;
+    text-align: left;
     color: lightgray;
     font-size: medium;
     font-weight: bold;
@@ -71,14 +94,11 @@ body {
   #footer {
     position: absolute;
     bottom: 0px;
-    margin-bottom:20px;
     margin-right: 10px;
     font-size: 13px;
     line-height: 150%;
     color: lightgray;
   }
-  
-  
   
   /* the layout of the legend panel */
   #legend {
@@ -117,4 +137,3 @@ body {
       right: 0;
       font-style: italic;
   }
-  
