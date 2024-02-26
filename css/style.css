@@ -41,14 +41,14 @@ body {
     top: 0;
     bottom: 50%;
     right: 0%;
-    height: 100%;
+    height: 97%;
     background: #201d1d;
     padding: 20px;
     color: white;
     border-radius: 10px;
+    overflow-y: auto; 
   }
   
-  /* social media icons */
   #info a {
     color: lightgray;
   }
@@ -63,14 +63,12 @@ body {
     font-family: 'Oswald', sans-serif;
   }
   
-  /* social media icons */
   #title span {
     font-size: 14px;
     float: right;
     margin-right: 10px;
   }
   
-  /* card decks */
   #desc {
     text-align: left;
     color: lightgray;
@@ -78,18 +76,6 @@ body {
     font-weight: bold;
     margin-bottom: 0px;
   }
-  
-  #earthquake-count {
-    margin:0;
-    text-align: center;
-    color: orange;
-    font-size: 50px;
-  }
-  
-  #earthquake-chart {
-    top: 20px;
-  }
-  
   
   #footer {
     position: absolute;
@@ -100,29 +86,51 @@ body {
     color: lightgray;
   }
   
-  /* the layout of the legend panel */
-  #legend {
+  #legend-container {
       position: absolute;
-      bottom: 0;
-      right: 0;
-      width: 110px;
-      background: #fff;
-      margin-right: 20px;
-      margin-bottom: 40px;
-      padding: 10px 20px 10px 10px;
-      border-radius: 3px;
-      text-align: center;
-      font-family: 'Open Sans', sans-serif;
+      top: 150px;
+      right: 25px;
+      background-color: rgb(241, 241, 241);
+      border: 1px solid #3f3d3d;
+      padding: 10px;
+      z-index: 10;
+      max-height: 400px;
+      overflow-y: auto;
+      width: 85%;
+      height: 20%;
+      color:rgb(0, 0, 0);
+      font-family: 'Oswald', sans-serif;
+  }
+
+  #legend-container :hover{
+    color:rgb(0, 0, 0);
+    font-weight: bold;
+    background-color: #9b9898;
+  }
+
+  .legend-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 5px;
+      z-index: 11;
   }
   
-  /* each line for a break */
+  .legend-color {
+      width: 20px;
+      height: 20px;
+      margin-right: 5px;
+  }
+  
+  .legend-label {
+      white-space: nowrap;
+  }
+  
   .break {
       position: relative;
       margin: 0px;
       padding: 0px;
   }
   
-  /* basic style for a dot/circle */
   .dot {
       display: inline-block;
       margin-top: 5px;
@@ -130,7 +138,6 @@ body {
       opacity: 0.6;
   }
   
-  /* the label for the dot */
   .dot-label {
       position: absolute;
       top: 0;
