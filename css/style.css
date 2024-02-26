@@ -77,15 +77,6 @@ body {
     margin-bottom: 0px;
   }
   
-  #footer {
-    position: absolute;
-    bottom: 0px;
-    margin-right: 10px;
-    font-size: 13px;
-    line-height: 150%;
-    color: lightgray;
-  }
-  
   #legend-container {
       position: absolute;
       top: 150px;
